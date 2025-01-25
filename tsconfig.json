@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                   // Versão do JavaScript que o TypeScript será convertido
+    "module": "NodeNext",                 // Módulo padrão para Node.js
+    "strict": true,                       // Habilitar verificações estritas
+    "esModuleInterop": true,              // Habilitar interoperabilidade com módulos ES
+    "skipLibCheck": true,                 // Ignorar verificação de tipos em bibliotecas
+    "forceConsistentCasingInFileNames": true, // Forçar consistência nos nomes de arquivos
+    "outDir": "./src/dist",                   // Pasta de saída para o código compilado
+    "rootDir": "./src",                   // Diretório raiz dos arquivos TypeScript
+    "resolveJsonModule": true,           // Permitir importação de arquivos JSON
+    "moduleResolution": "nodenext",          // Resolver módulos como o Node.js faz
+    "baseUrl": ".",                      // Base para resolver imports
+    "paths": {                           // Alias para facilitar imports
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src"],                    // Arquivos/diretórios incluídos na compilação
+  "exclude": ["node_modules", "dist"]   // Arquivos/diretórios excluídos da compilação
+}
