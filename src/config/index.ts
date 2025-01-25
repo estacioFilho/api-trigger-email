@@ -1,5 +1,7 @@
-import express from 'express';
+import app from "./sever";
+import transporter from "./emailConfig";
 
-const app = express();
-
-export default app;
+export {
+    app,
+    transporter
+}

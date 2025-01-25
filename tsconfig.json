@@ -10,9 +10,9 @@
     "rootDir": "./src",                   // Diretório raiz dos arquivos TypeScript
     "resolveJsonModule": true,           // Permitir importação de arquivos JSON
     "moduleResolution": "nodenext",          // Resolver módulos como o Node.js faz
-    "baseUrl": ".",                      // Base para resolver imports
+    "baseUrl": "./src",                      // Base para resolver imports
     "paths": {                           // Alias para facilitar imports
-      "@/*": ["src/*"]
+      "@/*": ["*"]
     }
   },
   "include": ["src"],                    // Arquivos/diretórios incluídos na compilação
