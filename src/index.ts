@@ -2,9 +2,12 @@ import { app } from "./config/";
 import express from "express";
 import { config } from "dotenv";
 import { router } from "./routes";
+import cors from "cors";
 
 config();
 const PORT = process.env.PORT || 3323;
+
+app.use(cors());
 
 //middlewares
 app.use(express.json()); //parse json

@@ -12,7 +12,7 @@ const serviceSendEmail = async (messagem: Messagem) => {
     subject: `Portfólio: ${messagem.service}`,
     html: `
             <h3>Você recebeu uma nova mensagem do formulário de contato:</h3>
-            <p><strong>Nome:</strong> ${messagem.fisrtname} ${messagem.surname}</p>
+            <p><strong>Nome:</strong> ${messagem.firstname} ${messagem.surname}</p>
             <p><strong>Celular:</strong> ${messagem.phone || "--"}</p>
             <p><strong>E-mail:</strong> ${messagem.email}</p>
             <p><strong>Mensagem:</strong> ${messagem.message}</p>

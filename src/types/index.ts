@@ -1,5 +1,5 @@
 export default interface Messagem {
-    fisrtname: string,
+    firstname: string,
     surname: string,
     email: string,
     phone: string,
