@@ -12,7 +12,7 @@
     "moduleResolution": "nodenext",          // Resolver módulos como o Node.js faz
     "baseUrl": "./src",                      // Base para resolver imports
     "paths": {                           // Alias para facilitar imports
-      "@/*": ["*"]
+      "@/*": ["./*"]
     }
   },
   "include": ["src"],                    // Arquivos/diretórios incluídos na compilação

@@ -1,5 +1,5 @@
-import { transporter } from "@/config";
-import Messagem from "@/types";
+import { transporter } from "../../config";
+import Messagem from "../../types";
 import { config } from "dotenv";
 config();
 

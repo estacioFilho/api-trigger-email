@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
 import { Request, Response } from "express";
-import { serviceSendEmail } from "@/services";
+import { serviceSendEmail } from "../../services";
 
 const sendEmailController = async (req: Request, res: Response) => {
   const { firstname, surname, email, service, messageContact } = req.body;
