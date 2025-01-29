@@ -6,7 +6,7 @@
     "esModuleInterop": true,             
     "skipLibCheck": true,                 
     "forceConsistentCasingInFileNames": true, 
-    "outDir": "src/dist",                   
+    "outDir": "./dist",                   
     "rootDir": "./src",                   
     "resolveJsonModule": true,           
     "moduleResolution": "nodenext",          
