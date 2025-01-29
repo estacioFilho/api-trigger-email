@@ -15,7 +15,7 @@ const serviceSendEmail = async (messagem: Messagem) => {
             <p><strong>Nome:</strong> ${messagem.firstname} ${messagem.surname}</p>
             <p><strong>Celular:</strong> ${messagem.phone || "--"}</p>
             <p><strong>E-mail:</strong> ${messagem.email}</p>
-            <p><strong>Mensagem:</strong> ${messagem.message}</p>
+            <p><strong>Mensagem:</strong> ${messagem.messageContact}</p>
         `,
   });
 };

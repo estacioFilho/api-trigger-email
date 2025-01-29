@@ -4,5 +4,5 @@ export default interface Messagem {
     email: string,
     phone: string,
     service: string,
-    message: string
+    messageContact: string
 }

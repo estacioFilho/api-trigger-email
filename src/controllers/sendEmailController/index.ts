@@ -4,7 +4,7 @@ import { Request, Response } from "express";
 import { serviceSendEmail } from "@/services";
 
 const sendEmailController = async (req: Request, res: Response) => {
-  const { firstname, surname, email, service, message } = req.body;
+  const { firstname, surname, email, service, messageContact } = req.body;
 
   try {
     const requiredFields: Record<string, string> = {
@@ -12,7 +12,7 @@ const sendEmailController = async (req: Request, res: Response) => {
       surname,
       email,
       service,
-      message,
+      messageContact,
     };
 
     const emptyField = Object.entries(requiredFields).find(

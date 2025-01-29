@@ -5,7 +5,7 @@ import { router } from "./routes";
 import cors from "cors";
 
 config();
-const PORT = process.env.PORT || 3323;
+const PORT = process.env.PORT ? parseInt(process.env.PORT,10) : 3323;
 
 app.use(cors());
 
@@ -19,4 +19,4 @@ app.get("/", (req, res) => {
 app.use(router);
 
 // start server
-app.listen(PORT, () => console.log(`Running server on port:${PORT}`));
+app.listen(PORT, '0.0.0.0',() => console.log(`Running server on port:${PORT}`));
